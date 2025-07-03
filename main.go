@@ -112,7 +112,7 @@ func scaffoldProject(domain, subdomain string) {
 		templateName = domain + "-" + subdomain
 	}
 
-	templatePath := filepath.Join(getTemplatesPath(), templateName)
+templatePath := filepath.Join(getTemplatesPath(), domain, subdomain)
 
 	// Check if template exists
 	if _, err := os.Stat(templatePath); os.IsNotExist(err) {
