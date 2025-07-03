@@ -1,0 +1,3 @@
+module janus/janus
+
+go 1.24.4
